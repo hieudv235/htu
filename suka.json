@@ -1,16 +1,12 @@
 {
   "type": "micro",
-  "wake_word": "suka",
+  "wake_word": "Suka",
   "author": "HTU Smart Home",
-  "website": "https://www.kevinahrendt.com/",
-  "model": "suka.tflite",
-  "trained_languages": ["en"],
-  "version": 2,
+  "website": "https://www.htu.com.vn/",
+  "model": "./suka.tflite",
+  "version": 1,
   "micro": {
-    "probability_cutoff": 0.95,
-    "sliding_window_size": 5,
-    "feature_step_size": 10,
-    "tensor_arena_size": 23628,
-    "minimum_esphome_version": "2024.7.0"
+    "probability_cutoff": 0.5,
+    "sliding_window_average_size": 10
   }
 }
